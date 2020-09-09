@@ -6,4 +6,15 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3"/>
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CatFactsLib">
+      <HintPath>.\Library\CatFactsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DogFactsLib">
+      <HintPath>.\Library\DogFactsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AnimalFactsCommon">
+      <HintPath>.\Library\AnimalFactsCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>  
 </Project>
