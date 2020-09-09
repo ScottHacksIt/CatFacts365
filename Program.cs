@@ -13,8 +13,9 @@ namespace CatFacts365
     {
         static async Task Main(string[] args)
         {
-            //AnimalFact factRetriever = new CatFact();
-            AnimalFact factRetriever = new DogFact();
+            AnimalFact factRetriever = new CatFact();
+            //AnimalFact factRetriever = new DogFact();
+            //AnimalFact factRetriever = new HorseFact();
             string fact = await factRetriever.GetFact();
             Console.WriteLine(fact);
         }
