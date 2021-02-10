@@ -3,8 +3,4 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp5.0</TargetFramework>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="CatFactsLib" Version="1.0.4" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-  </ItemGroup>
 </Project>
