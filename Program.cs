@@ -13,7 +13,7 @@ namespace CatFacts365
         static async Task Main(string[] args)
         {
             // send the request
-            string uri = "https://cat-fact.herokuapp.com/facts/random";
+            string uri = "https://catfact.ninja/fact";
             HttpRequestMessage req = new HttpRequestMessage();
             req.RequestUri = new Uri(uri);
             req.Method = HttpMethod.Get;
@@ -30,7 +30,7 @@ namespace CatFacts365
             // parse them
             JToken jsonObj = JsonConvert.DeserializeObject<object>(jsonContent) as JToken;
             // get that sweet cat fact
-            string catFact = jsonObj["text"].ToString();
+            string catFact = jsonObj["fact"].ToString();
             Console.WriteLine(catFact);
         }
     }
